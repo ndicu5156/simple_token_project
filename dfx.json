@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "tokenuber_backend": {
+      "main": "src/tokenuber_backend/main.mo",
+      "type": "motoko"
+    },
+    "tokenuber_frontend": {
+      "dependencies": [
+        "tokenuber_backend"
+      ],
+      "source": [
+        "src/tokenuber_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "tokenuber_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
